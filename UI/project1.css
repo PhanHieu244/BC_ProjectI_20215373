@@ -1,0 +1,135 @@
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #272822;
+    color: #ffffff;
+}
+
+.header {
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    color: #47bfff;
+    font-size: 2em;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #1288f7;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: 100vh;
+    padding: 20px;
+}
+
+.content {
+    grid-column: span 2;
+    background-color: #333333;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.content select {
+    margin: 0 10px 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #474747;
+    color: #ffffff;
+}
+
+.content pre {
+    background-color: #2c2c2c;
+    border: 1px solid #474747;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 1.2em;
+    line-height: 1.6;
+    overflow: auto;
+    color: #ffffff;
+}
+
+.input {
+    border: 1px solid #474747;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #2c2c2c;
+    resize: none;
+    height: 150px;
+    overflow: auto;
+    color: #ffffff;
+    width: 96%; /* Set the width to 100% */
+}
+
+.output {
+    border: 1px solid #474747;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #2c2c2c;
+    resize: none;
+    height: 150px;
+    overflow: auto;
+    color: #ffffff;
+    width: 96%; /* Set the width to 100% */
+}
+
+.input, .output {
+    resize: none;
+    height: 150px;
+    overflow: auto;
+    color: #ffffff;
+}
+
+.code {
+    margin: 0;
+}
+
+input[type="submit"] {
+    background-color: #61dafb;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+input[type="submit"]:hover {
+    background-color: #4fa3d1;
+}
+
+.submit_container {
+    text-align: center;
+    margin: 10px;
+}
+
+.problem {
+    white-space: pre-wrap;
+    overflow: auto;
+    color: #ffffff;
+    border: 1px solid #474747;
+    padding: 20px;
+    border-radius: 15px; /* Add border-radius for rounded corners */
+}
+
+.problem:first-line{
+    font-size: 2.2em; /* Increase font size for the first line */
+    color: #00ff9d; /* Brighter color for the first line */
+
+}
+
+.line{
+    font-size: 2.2em; /* Increase font size for the first line */
+    color: #00ff9d; /* Brighter color for the first line */
+
+}
